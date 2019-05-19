@@ -1,0 +1,5 @@
+on_pop_purged = {
+	events = {
+		voidborn.10000
+	}
+}

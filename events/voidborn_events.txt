@@ -1,0 +1,38 @@
+namespace = voidborn
+
+
+## 1-9999 Story events
+
+## 10000-19999 Assimilation Events
+
+## 20000-29999 Other Events
+
+#Purity government: purging humanoid pops spawns own pops
+planet_event = {
+	id = voidborn.10000
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			has_civic = civic_void_assimilation
+		}
+		FROMFROM = {
+			is_robot_pop = no
+			NOR = {
+				is_same_species = owner_species
+                is_species_class = HUM
+            }
+		}
+		is_controlled_by = FROM
+	}
+	
+	immediate = {
+		while = {
+            count = 1
+            create_pop = {
+                species = owner_main_species
+			}
+		}
+	}
+}

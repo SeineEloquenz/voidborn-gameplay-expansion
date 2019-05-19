@@ -1,0 +1,22 @@
+civic_void_assimilation = {
+	potential = {
+        has_species_class = CORRUPTED
+    }
+    
+	possible = {
+        always = yes
+	}
+    
+	modification = no
+	random_weight = {
+		base = 1
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = civic_tooltip_void_assimilation_effects
+	
+}
+
