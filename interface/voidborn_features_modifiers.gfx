@@ -1,0 +1,7 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_mod_voidborn_corrupted"
+		texturefile = "gfx/interface/icons/modifiers/mod_voidborn_corrupted.dds"
+	}
+}

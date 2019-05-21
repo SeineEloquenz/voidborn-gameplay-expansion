@@ -1,11 +1,162 @@
 namespace = voidborn
 
+## 1-999 Setup
 
-## 1-9999 Story events
+## 1000-9999 Story events
 
 ## 10000-19999 Assimilation Events
 
 ## 20000-29999 Other Events
+
+## 30000-* debug stuff 
+
+##### SETUP
+
+##### STORY
+
+##### ASSIMILATION
+
+country_event = {
+    id = voidborn.11000
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+        has_valid_civic = civic_void_assimilation
+        check_variable = { which = pvac value >= 500 }
+    }
+    
+    immediate = {
+        #pvac = pop void assimilation count
+        change_variable = { which = pvac value = -500 }
+        IF = {
+            limit = { has_modifier = voidborn_corrupted_1 }
+            country_event = { id = voidborn.11002}
+        }
+        ELSE_IF = {
+            limit = { has_modifier = voidborn_corrupted_2 }
+            country_event = { id = voidborn.11003}
+        }
+        ELSE_IF = {
+            limit = { has_modifier = voidborn_corrupted_3 }
+            country_event = { id = voidborn.11004}
+        }
+        ELSE_IF = {
+            limit = { has_modifier = voidborn_corrupted_4 }
+            country_event = { id = voidborn.11005}
+        }
+        ELSE_IF = {
+            limit = { has_modifier = voidborn_corrupted_5 }
+        }
+        ELSE = {
+            country_event = { id = voidborn.11001}
+        }
+    }
+}
+
+country_event = {
+    id = voidborn.11001
+    title = "voidborn.11001.name"
+    desc = "voidborn.11001.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.11001.a
+        add_modifier = {
+            modifier = voidborn_corrupted_1
+            days = -1
+        }
+    }
+}
+
+country_event = {
+    id = voidborn.11002
+    title = "voidborn.11002.name"
+    desc = "voidborn.11002.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.11002.a
+        remove_modifier = voidborn_corrupted_1
+        add_modifier = {
+            modifier = voidborn_corrupted_2
+            days = -1
+        }
+    }
+}
+
+country_event = {
+    id = voidborn.11003
+    title = "voidborn.11003.name"
+    desc = "voidborn.11003.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.11003.a
+        remove_modifier = voidborn_corrupted_2
+        add_modifier = {
+            modifier = voidborn_corrupted_3
+            days = -1
+        }
+    }
+}
+
+country_event = {
+    id = voidborn.11004
+    title = "voidborn.11004.name"
+    desc = "voidborn.11004.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.11004.a
+        remove_modifier = voidborn_corrupted_3
+        add_modifier = {
+            modifier = voidborn_corrupted_4
+            days = -1
+        }
+    }
+}
+
+country_event = {
+    id = voidborn.11005
+    title = "voidborn.11005.name"
+    desc = "voidborn.11005.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.11005.a
+        remove_modifier = voidborn_corrupted_4
+        add_modifier = {
+            modifier = voidborn_corrupted_5
+            days = -1
+        }
+    }
+}
 
 #Purity government: purging humanoid pops spawns own pops
 planet_event = {
@@ -33,6 +184,9 @@ planet_event = {
             create_pop = {
                 species = owner_main_species
 			}
+            FROM = {
+                change_variable = { which = pvac value = 1 }
+            }
 		}
 	}
 }
@@ -69,4 +223,19 @@ planet_event = {
 			}
 		}
 	}
+}
+
+##### DEBUG
+
+country_event = {
+    id = voidborn.30000
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    immediate = {
+        change_variable = { which = pvac value = 500 }
+    }
 }

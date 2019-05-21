@@ -3,3 +3,9 @@ on_pop_purged = {
 		voidborn.10000
 	}
 }
+
+on_yearly_pulse_country = {
+	events = {
+		voidborn.11000 #Assimilated pop count trigger event
+	}
+}

@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_evt_voidborn_corruption"
+		texturefile = "gfx/event_pictures/voidborn_corrupted.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+	
