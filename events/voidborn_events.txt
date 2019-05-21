@@ -15,14 +15,14 @@ planet_event = {
 	
 	trigger = {
 		FROM = {
-			has_civic = civic_void_assimilation
+			has_valid_civic = civic_void_assimilation
 		}
 		FROMFROM = {
 			is_robot_pop = no
-			NOR = {
+			NOT = {
 				is_same_species = owner_species
-                is_species_class = HUM
             }
+            is_species_class = HUM
 		}
 		is_controlled_by = FROM
 	}
@@ -32,6 +32,40 @@ planet_event = {
             count = 1
             create_pop = {
                 species = owner_main_species
+			}
+		}
+	}
+}
+
+#Purity government: purging pops yields unity
+planet_event = {
+	id = voidborn.10001
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+            has_valid_civic = civic_void_assimilation
+        }
+		FROMFROM = {
+			is_robot_pop = no
+			NOT = {
+				is_same_species = owner_species
+			}
+			NOT = {
+                is_species_class = HUM
+            }
+		}
+		is_controlled_by = FROM
+	}
+	
+	immediate = {
+		FROM = {
+			add_monthly_resource_mult = {
+				resource = unity
+				value = 1.5
+				min = 5
+				max = 100
 			}
 		}
 	}
