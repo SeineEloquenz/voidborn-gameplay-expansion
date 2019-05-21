@@ -5,6 +5,7 @@
  war_goal_wg_void_abduct_desc:0 "War is waged to abduct pops for the Void Corruption Ritual."
  war_goal_wg_void_assimilation:0 "Void Corruption"
  war_goal_wg_void_assimilation_desc:0 "War is waged to assimilate a Humanoid or Mammalian empire into the Voidborn."
+ wg_void_assimilation_ttp:0 "Their ruling species will all be subjected to a grand void ritual, which will turn their weak, fleeting kind into one of our own, so they too can live in the Glory of the Void."
  
  voidborn.11001.name:0 "Void Corruption"
  voidborn.11001.desc:0 "The Corruption Ritual held today on [Root.Capital.GetName] was a full success! A sacrifice of a few hundred souls was made to the Void and the Void rewarded us. But we feel it again already..."
@@ -22,6 +23,8 @@
  voidborn.11005.desc:0 "The Hunger... It... Doesn't stop. We see it now. The gifts the Void gave us need to be repayed. Repayed in unbelieving souls. And we shall satisfy the Void. We will offer it the whole Galaxy. The Galaxy will become the Void. And we'll all be free in its Glory"
  voidborn.11005.a:0 "Another Billion vanquished..."
  
+ voidborn_force_converted:0 "Forced Void Corruption"
+ voidborn_force_converted_desc:0 "This Species embraced the Voids Blessing forcefully and the population is not happy about it"
  voidborn_corrupted_1:0 "Void Blessing"
  voidborn_corrupted_1_desc:0 "The Voids Blessing allows us to improve our superior kind even more"
  voidborn_corrupted_2:0 "Void Blessing"
@@ -32,3 +35,4 @@
  voidborn_corrupted_4_desc:0 "The Voids Blessing allows us to improve our superior kind even more"
  voidborn_corrupted_5:0 "Void Blessing"
  voidborn_corrupted_5_desc:0 "The Voids Blessing allows us to improve our superior kind even more"
+ 

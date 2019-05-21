@@ -4,7 +4,7 @@ wg_void_assimilation = {
     icon = GFX_wg_void_void_assimilation
 	
 	hide_if_no_cb = no
-	total_war = yes
+	total_war = no
 	
 	surrender_acceptance = -1000
 
@@ -21,6 +21,44 @@ wg_void_assimilation = {
 	possible = {
 		always = yes
 	}
+    
+    on_accept = {
+		custom_tooltip = wg_void_assimilation_ttp
+        hidden_effect = {
+            owner_species = {
+                save_event_target_as = species_scope
+            }
+            from = {
+                change_dominant_species = { species = event_target:species_scope change_all = yes }
+                every_owned_pop = {
+                    limit = {
+                        OR = {
+                            is_species_class = MAM
+                            is_species_class = HUM
+                        }
+                    }
+                    random_list = {
+                        10 = {
+                            change_species = event_target:species_scope
+                        }
+                        40 = {
+                            save_event_target_as = expel_pop
+                            any_playable_country = {
+                                random_owned_planet = {
+                                    resettle_pop = {
+                                        pop = event_target:expel_pop
+                                        planet = this
+                                    }
+                                }
+                            }
+                        }
+                        50 = {}
+                    }
+				}
+                add_modifier = { modifier = voidborn_force_converted days = 3600 } 
+            }
+        }
+    }
 	
 	ai_weight = {
 		weight = 1000
