@@ -1,5 +1,7 @@
 wg_void_assimilation = {
 	casus_belli = cb_void_assimilation
+    
+    icon = GFX_wg_void_void_assimilation
 	
 	hide_if_no_cb = no
 	total_war = yes
@@ -27,6 +29,8 @@ wg_void_assimilation = {
 
 wg_void_abduct = {
 	casus_belli = cb_void_abduct
+    
+    icon = GFX_wg_void_void_abduct
 	
 	hide_if_no_cb = no
 	total_war = no

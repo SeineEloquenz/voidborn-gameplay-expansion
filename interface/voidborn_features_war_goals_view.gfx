@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_wg_void_abduct"
+		texturefile = "gfx/interface/icons/diplomacy/dipl_void_abduct.dds"
+	}
+    
+	spriteType = {
+		name = "GFX_wg_void_assimilation"
+		texturefile = "gfx/interface/icons/diplomacy/dipl_void_assimilation.dds"
+	}
+}
