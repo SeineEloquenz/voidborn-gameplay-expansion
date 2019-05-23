@@ -7,6 +7,10 @@
  war_goal_wg_void_assimilation_desc:0 "War is waged to assimilate a Humanoid or Mammalian empire into the Voidborn."
  wg_void_assimilation_ttp:0 "Their ruling species will all be subjected to a grand void ritual, which will turn their weak, fleeting kind into one of our own, so they too can live in the Glory of the Void."
  
+ civic_void_assimilation:0 "Void Assimilation"
+ civic_void_assimilation_desc:0 "This country was blessed by the Void with exceptionally long lives which they use to repay their debt to the Void by plunging the galaxy into darkness."
+ civic_tooltip_void_assimilation_effects:0 "This country can demand for other humanoid or mammalian empires to embrace their dark ways and change into their primary species. \n They can enforce this through war and also abduct mammalian or humanoid pops for assimilation into their main species through the "Processing" purge type."
+ 
  voidborn.11001.name:0 "Void Corruption"
  voidborn.11001.desc:0 "The Corruption Ritual held today on [Root.Capital.GetName] was a full success! A sacrifice of a few hundred souls was made to the Void and the Void rewarded us. But we feel it again already..."
  voidborn.11001.a:0 "The Void hungers for more."
@@ -73,8 +77,8 @@
  voidborn_demanded_corruption_accept:0 "We have no other choice but to accept..."
  voidborn_demanded_corruption_decline:0 "Never will we be subjugated!"
  voidborn_assimilation_accepted_title:0 "Assimilation Accepted"
- voidborn_assimilation_accepted_desc:0 "The [From.GetName] welcomed our priests with a mixture of acceptance and fear... But no one objected. The Rituals went ahead as planned and now their overlord already speaks in the language of the Void as well"
+ voidborn_assimilation_accepted_desc:0 "We welcomed your priests on [From.Capital.GetName] as you demanded. With a mixture of acceptance and fear our populace went through your Ritual... Now we speak in the language of the Void as well, but don't think that we'll forget"
  voidborn_demanded_corruption_accepted:0 "The Void consumes all"
  voidborn_assimilation_declined_title:0 "Assimilation Declined"
- voidborn_assimilation_declined_desc:0 "The [From.GetName] refused to let our priests enter their Capital. They even shot down one of the shuttles... We are yet to find out why they rejected our generous gift, but consequences have to be drawn!"
- voidborn_demanded_corruption_declined:0 "The Void doesn't forget"
+ voidborn_assimilation_declined_desc:0 "The priests you sent to us to do your pesky ritual were prohibited to enter our Capital. As they didn't react to our warnings we had to shoot one down... Don't expect us to give into your crazy demands."
+ voidborn_demanded_corruption_declined:0 "The Void doesn't forget. The Void doesn't forgive"

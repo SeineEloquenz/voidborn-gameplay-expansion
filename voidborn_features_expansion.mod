@@ -3,6 +3,7 @@ path="mod/voidborn_features_expansion"
 dependencies={
     "Voidborn"
 }
+replace_path="Voidborn"
 tags={
 	"Leaders"
 	"Species"

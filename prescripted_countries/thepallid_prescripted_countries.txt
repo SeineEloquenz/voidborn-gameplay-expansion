@@ -1,0 +1,207 @@
+"Pallid Tribunal"
+={
+	key="Pallid Tribunal"
+	ship_prefix=""
+	species={
+		class="CORRUPTED"
+		portrait="human_dark"
+		name="Pallid"
+		plural="Pallid"
+		adjective="Pallid"
+		species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. Thousands of years within a dream of infinite darkness pushed their minds over natural boundaries. The time to seek the rebirth of their long dead overlords lost empire is now."
+		name_list="thepallidnames"
+		trait="trait_venerable"
+		trait="trait_intelligent"
+		trait="trait_weak"
+		trait="trait_decadent"
+		trait="trait_nonadaptive"
+	}
+	name="Pallid Tribunal"
+	adjective="Pallid"
+	authority="auth_oligarchic"
+	government="gov_void_covenant"
+	advisor_voice_type="l_spiritualist"
+	planet_name="Umbra"
+	planet_class="pc_alpine"
+	system_name="The Maw of Darkness"
+	initializer="thepallid_system"
+	graphical_culture="arthropoid_01"
+	city_graphical_culture="infested_01"
+	empire_flag={
+		icon={
+			category="domination"
+			file="domination_21.dds"
+		}
+		background={
+			category="backgrounds"
+			file="new_dawn.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Zir Xiza"
+		portrait="human_dark_female_03"
+		texture=0
+		hair=0
+		clothes=3
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="pallid_room"
+	spawn_enabled=no
+	ethic="ethic_authoritarian"
+	ethic="ethic_xenophobe"
+	ethic="ethic_spiritualist"
+	civics={
+		"civic_exalted_priesthood"
+		"civic_void_assimilation"
+	}
+}
+"Maw of Darkness"
+={
+	key="Maw of Darkness"
+	ship_prefix=""
+	species={
+		class="CORRUPTED"
+		portrait="human_parasite"
+		name="Pallid"
+		plural="Pallid"
+		adjective="Pallid"
+		species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. Thousands of years within a dream of infinite darkness pushed their minds over natural boundaries. Then they found them. They found what they searched for so long. They found their dark gods and were subsumed by them. Subsumed into one being. Into a greater being. Into the Pallid."
+		name_list="thepallidnames"
+		trait="trait_hive_mind"
+		trait="trait_rapid_breeders"
+		trait="trait_adaptive"
+		trait="trait_communal"
+		trait="trait_repugnant"
+		trait="trait_fleeting"
+	}
+	name="Maw of Darkness"
+	adjective="Pallid"
+	authority="auth_hive_mind"
+	government="gov_void_swarm"
+	advisor_voice_type="l_hivemind"
+	planet_name="Umbra"
+	planet_class="pc_alpine"
+	system_name="The Maw of Darkness"
+	initializer="thepallid_system"
+	graphical_culture="fungoid_01"
+	city_graphical_culture="infested_01"
+	empire_flag={
+		icon={
+			category="spherical"
+			file="flag_spherical_8.dds"
+		}
+		background={
+			category="backgrounds"
+			file="new_dawn.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Zir Xiza"
+		portrait="human_parasite"
+		texture=2
+		hair=0
+		clothes=0
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="infested_room"
+	spawn_enabled=no
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_hive_one_mind"
+		"civic_void_assimilation"
+	}
+}
+"Dark Ones"
+={
+	key="Dark Ones"
+	ship_prefix=""
+	species={
+		class="CORRUPTED"
+		portrait="octop_dark"
+		name="Old One"
+		plural="Old Ones"
+		adjective="Old"
+		name_list="thepallidnames"
+		trait="trait_traditional"
+		trait="trait_weak"
+		trait="trait_venerable"
+		trait="trait_nonadaptive"
+	}
+	secondary_species={
+		class="CORRUPTED"
+		portrait="human_dark"
+		name="Pallid One"
+		plural="Pallid Ones"
+		adjective="Pallid"
+		name_list="thepallidnames"
+		trait="trait_syncretic_proles"
+		trait="trait_rapid_breeders"
+		trait="trait_slow_learners"
+		trait="trait_fleeting"
+		trait="trait_communal"
+	}
+	species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. More than a hundred years have passed since then. Unfortunately the alien overlords barely remember their past lives and power, thousand of years within a dream of infinite darkness pushed their knowledge to the oblivion... The time to seek the rebirth of a lost empire is now."
+	name="Dark Ones"
+	adjective="Dark"
+	authority="auth_imperial"
+	government="gov_void_monarchy"
+	advisor_voice_type="l_hivemind"
+	planet_name="Umbra"
+	planet_class="pc_alpine"
+	system_name="The Maw of Darkness"
+	initializer="thepallid_system"
+	graphical_culture="arthropoid_01"
+	city_graphical_culture="infested_01"
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_3.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Zakardim"
+		portrait="octop_dark"
+		texture=1
+		hair=0
+		clothes=3
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="pallid_room"
+	spawn_enabled=no
+	ethic="ethic_authoritarian"
+	ethic="ethic_fanatic_spiritualist"
+	civics={
+		"civic_syncretic_evolution"
+		"civic_void_assimilation"
+	}
+}
