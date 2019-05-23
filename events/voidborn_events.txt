@@ -17,6 +17,711 @@ namespace = voidborn
 ##### ASSIMILATION
 
 country_event = {
+    id = voidborn.100
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    immediate = {
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_0
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_1
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_2
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_3
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_4
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_5
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_6
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_7
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_8
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_9
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_10
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_11
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_12
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_13
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_14
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_15
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_16
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_17
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_18
+            set_country_flag = vb_evt_selected
+        }
+        random_country = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+                is_primitive = no
+                NOT = { has_country_flag = vb_evt_selected }
+            }
+            save_event_target_as = voidborn_evtt_demand_corruption_19
+            set_country_flag = vb_evt_selected
+        }
+        country_event = { id = voidborn.110 }
+        every_country = {    
+            remove_country_flag = vb_evt_selected
+        }
+    }
+}
+
+country_event = {
+	id = voidborn.110
+	is_triggered_only = yes
+
+	title = "voidborn_select_assimilation_target_title"
+	desc = "voidborn_select_assimilation_target_desc"
+	show_sound = event_conversation
+
+	option = {
+		name = voidborn_demand_corruption_0
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_0
+            has_communications = event_target:voidborn_evtt_demand_corruption_0
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_0 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_1
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_1
+            has_communications = event_target:voidborn_evtt_demand_corruption_1
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_1 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_2
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_2
+            has_communications = event_target:voidborn_evtt_demand_corruption_2
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_2 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_3
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_3
+            has_communications = event_target:voidborn_evtt_demand_corruption_3
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_3 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_4
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_4
+            has_communications = event_target:voidborn_evtt_demand_corruption_4
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_4 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_5
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_5
+            has_communications = event_target:voidborn_evtt_demand_corruption_5
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_5 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_6
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_6
+            has_communications = event_target:voidborn_evtt_demand_corruption_6
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_6 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_7
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_7
+            has_communications = event_target:voidborn_evtt_demand_corruption_7
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_7 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_8
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_8
+            has_communications = event_target:voidborn_evtt_demand_corruption_8
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_8 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_9
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_9
+            has_communications = event_target:voidborn_evtt_demand_corruption_9
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_9 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_10
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_10
+            has_communications = event_target:voidborn_evtt_demand_corruption_10
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_10 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_11
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_11
+            has_communications = event_target:voidborn_evtt_demand_corruption_11
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_11 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_12
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_12
+            has_communications = event_target:voidborn_evtt_demand_corruption_12
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_12 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_13
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_13
+            has_communications = event_target:voidborn_evtt_demand_corruption_13
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_13 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_14
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_14
+            has_communications = event_target:voidborn_evtt_demand_corruption_14
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_14 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_15
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_15
+            has_communications = event_target:voidborn_evtt_demand_corruption_15
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_15 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_16
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_16
+            has_communications = event_target:voidborn_evtt_demand_corruption_16
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_16 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_17
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_17
+            has_communications = event_target:voidborn_evtt_demand_corruption_17
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_17 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_18
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_18
+            has_communications = event_target:voidborn_evtt_demand_corruption_18
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_18 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_19
+		trigger = {
+			exists = event_target:voidborn_evtt_demand_corruption_19
+            has_communications = event_target:voidborn_evtt_demand_corruption_19
+		}
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			event_target:voidborn_evtt_demand_corruption_19 = { save_event_target_as = corruption_demand_target }
+            country_event = { id = voidborn.101}
+		}
+	}
+	option = {
+		name = voidborn_demand_corruption_20
+		trigger = {
+		}
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+
+country_event = {
+	id = voidborn.101
+	is_triggered_only = yes
+
+	title = "voidborn_assimilation_demand_title"
+	desc = "voidborn_assimilation_demand_desc"
+	show_sound = event_conversation
+    diplomatic = yes
+    
+	picture_event_data = {
+		portrait = event_target:corruption_demand_target            #Animated portrait. Accepts country, leader or species scope as an input
+		planet_background = event_target:corruption_demand_target   #Planet background, if your picture has a window
+		graphical_culture = event_target:corruption_demand_target   #City on the planet in the window
+		city_level = event_target:corruption_demand_target          #The size of the city. Usable to make planet behind look like capital
+		room = event_target:corruption_demand_target.ruler          #Static background. Can use static pictures or scopes as the input
+	}
+
+	option = {
+		name = voidborn_assimilation_demand_option
+		trigger = {
+		}
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+            save_event_target_as = corruption_demander
+            save_event_target_as = species_scope
+            event_target:corruption_demand_target = {
+                country_event = { id = voidborn.102 }
+            }
+		}
+	}
+    option = {
+		name = voidborn_demand_corruption_20
+		trigger = {
+		}
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
+	id = voidborn.102
+	is_triggered_only = yes
+
+	title = "voidborn_assimilation_demanded_title"
+	desc = "voidborn_assimilation_demanded_desc"
+	show_sound = event_conversation
+    diplomatic = yes
+    
+	picture_event_data = {
+		portrait = event_target:corruption_demander            #Animated portrait. Accepts country, leader or species scope as an input
+		planet_background = event_target:corruption_demander   #Planet background, if your picture has a window
+		graphical_culture = event_target:corruption_demander   #City on the planet in the window
+		city_level = event_target:corruption_demander          #The size of the city. Usable to make planet behind look like capital
+		room = event_target:corruption_demander.ruler          #Static background. Can use static pictures or scopes as the input
+	}
+
+	option = {
+		name = voidborn_demanded_corruption_accept
+		trigger = {
+		}
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+            country_event = { id = voidborn.11100 }
+            event_target:corruption_demander = {
+                country_event = { id = voidborn.103 }
+            }
+		}
+	}
+    
+	option = {
+		name = voidborn_demanded_corruption_decline
+		trigger = {
+		}
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+            event_target:corruption_demander = {
+                add_casus_belli = { type = cb_void_assimilation who = event_target:corruption_demand_target days = 360 }
+            }
+            event_target:corruption_demander = {
+                country_event = { id = voidborn.104 }
+            }
+		}
+	}
+}
+
+country_event = {
+	id = voidborn.103
+	is_triggered_only = yes
+
+	title = "voidborn_assimilation_accepted_title"
+	desc = "voidborn_assimilation_accepted_desc"
+	show_sound = event_conversation
+    diplomatic = yes
+    
+	picture_event_data = {
+		portrait = event_target:corruption_demand_target            #Animated portrait. Accepts country, leader or species scope as an input
+		planet_background = event_target:corruption_demand_target   #Planet background, if your picture has a window
+		graphical_culture = event_target:corruption_demand_target   #City on the planet in the window
+		city_level = event_target:corruption_demand_target          #The size of the city. Usable to make planet behind look like capital
+		room = event_target:corruption_demand_target.ruler          #Static background. Can use static pictures or scopes as the input
+	}
+
+	option = {
+		name = voidborn_demanded_corruption_accepted
+		trigger = {
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = voidborn.104
+	is_triggered_only = yes
+
+	title = "voidborn_assimilation_declined_title"
+	desc = "voidborn_assimilation_declined_desc"
+	show_sound = event_conversation
+    diplomatic = yes
+    
+	picture_event_data = {
+		portrait = event_target:corruption_demand_target            #Animated portrait. Accepts country, leader or species scope as an input
+		planet_background = event_target:corruption_demand_target   #Planet background, if your picture has a window
+		graphical_culture = event_target:corruption_demand_target   #City on the planet in the window
+		city_level = event_target:corruption_demand_target          #The size of the city. Usable to make planet behind look like capital
+		room = event_target:corruption_demand_target.ruler          #Static background. Can use static pictures or scopes as the input
+	}
+    
+	option = {
+		name = voidborn_demanded_corruption_declined
+		trigger = {
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
     id = voidborn.11000
     hide_window = yes
     is_triggered_only = yes
@@ -155,6 +860,49 @@ country_event = {
             modifier = voidborn_corrupted_5
             days = -1
         }
+    }
+}
+
+country_event = {
+    id = voidborn.11100
+    title = "voidborn.11100.name"
+    desc = "voidborn.11100.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.11100.a
+        change_dominant_species = { species = event_target:species_scope change_all = yes }
+        every_owned_pop = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+            }
+            random_list = {
+                10 = {
+                    change_species = event_target:species_scope
+                }
+                40 = {
+                    save_event_target_as = expel_pop
+                    any_playable_country = {
+                        random_owned_planet = {
+                            resettle_pop = {
+                                pop = event_target:expel_pop
+                                planet = this
+                            }
+                        }
+                    }
+                }
+                50 = {}
+            }
+        }
+        add_modifier = { modifier = voidborn_force_converted days = 3600 }
     }
 }
 
