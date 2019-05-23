@@ -1,0 +1,22 @@
+# Xenophobes are a bit less popular with everyone else
+opinion_void_assimilators = {
+    
+    trigger = {
+        FROM = { has_valid_civic = civic_void_assimilation }
+        NOT = { is_same_species_class = FROM }
+    }
+    
+	opinion = {
+		base = -50
+	}
+}
+opinion_voidborn = {
+
+    trigger = {
+        FROM = { AND = { is_species_class = CORRUPTED NOT = { has_valid_civic = civic_void_assimilation } } }
+        NOT = { is_same_species_class = FROM }
+    }
+	opinion = {
+		base = -10
+	}
+}

@@ -82,3 +82,6 @@
  voidborn_assimilation_declined_title:0 "Assimilation Declined"
  voidborn_assimilation_declined_desc:0 "The priests you sent to us to do your pesky ritual were prohibited to enter our Capital. As they didn't react to our warnings we had to shoot one down... Don't expect us to give into your crazy demands."
  voidborn_demanded_corruption_declined:0 "The Void doesn't forget. The Void doesn't forgive"
+ 
+ opinion_voidborn:0 "Voidborn"
+ opinion_void_assimilators:0 "Voidborn Assimilators"
