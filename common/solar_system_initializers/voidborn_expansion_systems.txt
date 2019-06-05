@@ -51,10 +51,10 @@ voidborn_void_rift_system = {
 		
 		moon = {
 			name = "Xan'Amach"
-			class = "pc_shrouded"
+			class = "pc_relic"
 			orbit_distance = 17
 			orbit_angle = 45
-			size = 16
+			size = 25
 			starting_planet = yes
 			has_ring = no
 			modifiers = none

@@ -9,5 +9,4 @@ tags={
 	"Species"
 }
 picture="voidborn.png"
-remote_file_id="1741456677"
-supported_version="2.2.*"
+supported_version="2.3.*"
