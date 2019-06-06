@@ -59,7 +59,7 @@ country_event = {
 
 fleet_event = { 
 	id = voidborn.1000
-	title = vb_dark_ones_digsite
+	title = "voidborn.1000.name"
 	desc = voidborn.1000.desc
 	picture = GFX_evt_archaeological_dig
 	show_sound = event_default
@@ -89,6 +89,12 @@ fleet_event = {
 	option = {
 		name = voidborn.1001.a
 	}
+    
+    after = {
+		owner = {
+			add_resource = { minor_artifacts = 2 }
+		}
+	}
 }
 
 fleet_event = {
@@ -105,6 +111,12 @@ fleet_event = {
 
 	option = {
 		name = voidborn.1002.a
+	}
+    
+    after = {
+		owner = {
+			add_resource = { minor_artifacts = 6 }
+		}
 	}
 }
 
@@ -195,9 +207,9 @@ fleet_event = {
 
 fleet_event = { 
 	id = voidborn.1010
-	title = vb_rift_digsite
+	title = "voidborn.1010.name"
 	desc = voidborn.1010.desc
-	picture = GFX_evt_archaeological_dig
+	picture = GFX_evt_huge_monuments
 	show_sound = event_default
 	location = from
 
@@ -207,6 +219,12 @@ fleet_event = {
 
 	option = {
 		name = voidborn.1010.a
+	}
+    
+    after = {
+		owner = {
+			add_resource = { minor_artifacts = 3 }
+		}
 	}
 }
 
@@ -240,6 +258,12 @@ fleet_event = {
 
 	option = {
 		name = voidborn.1012.a
+	}
+    
+    after = {
+		owner = {
+			add_resource = { minor_artifacts = 10 }
+		}
 	}
 }
 fleet_event = { 
