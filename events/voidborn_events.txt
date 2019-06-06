@@ -243,6 +243,12 @@ fleet_event = {
 	option = {
 		name = voidborn.1011.a
 	}
+    
+    after = {
+		owner = {
+			add_resource = { minor_artifacts = 4 }
+		}
+	}
 }
 fleet_event = { 
 	id = voidborn.1012
@@ -284,6 +290,12 @@ fleet_event = {
             }
         }
 		name = voidborn.1013.a
+	}
+    
+    after = {
+		owner = {
+			add_resource = { minor_artifacts = 7 }
+		}
 	}
 }
 fleet_event = { 
