@@ -12,6 +12,21 @@ namespace = voidborn
 
 ##### SETUP
 
+event = {
+    id = voidborn.1
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    immediate = {
+        event_target:voidborn_yggxaraz = {
+            create_archaeological_site = vb_dark_ones_digsite
+        }
+    }
+}
+
 planet_event = {
     id = voidborn.998
     hide_window = yes
@@ -41,6 +56,232 @@ country_event = {
     }
 }
 ##### STORY
+
+fleet_event = { 
+	id = voidborn.1000
+	title = vb_dark_ones_digsite
+	desc = voidborn.1000.desc
+	picture = GFX_evt_archaeological_dig
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1000.a
+	}
+}
+
+fleet_event = {
+	id = voidborn.1001
+	title = "voidborn.1001.name"
+	desc = voidborn.1001.desc
+	picture = GFX_evt_zro_3
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1001.a
+	}
+}
+
+fleet_event = {
+	id = voidborn.1002
+	title = "voidborn.1002.name"
+	desc = voidborn.1002.desc
+	picture = GFX_evt_zro_3
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1002.a
+	}
+}
+
+fleet_event = {
+	id = voidborn.1003
+	title = "voidborn.1003.name"
+	desc = voidborn.1003.desc
+	picture = GFX_evt_zro_5
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1003.a
+        custom_tooltip = voidborn_void_habitability_tt
+		hidden_effect = {
+            owner = {
+                every_owned_pop = {
+                    limit = {
+                        is_robot_pop = no
+                        is_sapient = yes
+                        is_species_class = CORRUPTED
+                    }
+                    modify_species = {
+                        species = this
+                        add_trait = pc_void_habitability
+                        ideal_planet_class = pc_void
+                    }
+                }
+                capital_scope = {
+                    change_pc = pc_void
+                }
+            }
+        }
+	}
+}
+fleet_event = {
+	id = voidborn.1004
+	title = "voidborn.1004.name"
+	desc = voidborn.1004.desc
+	picture = GFX_evt_zro_5
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1004.a
+        custom_tooltip = vb_rift_system_found_tt
+        hidden_effect = {
+            no_scope = {
+                spawn_system = {
+                    min_distance >= 25
+                    max_distance <= 45
+                    min_orientation_angle = 90
+                    max_orientation_angle = 160
+                    initializer = voidborn_void_rift_system
+                }
+            }
+            event_target:voidborn_yggxaraz = {
+                solar_system = {
+                    event_target:voidborn_rift_system = {
+                        isolate_system = yes
+                        prev = {
+                            spawn_natural_wormhole = {
+                                bypass_type = wormhole
+                                random_pos = yes
+                                orbit_angle = 360
+                            }
+                        }
+                        spawn_natural_wormhole = {
+                            bypass_type = wormhole
+                            random_pos = yes
+                            orbit_angle = 270
+                        }
+                        link_wormholes = prev
+                    }
+                }
+            }
+        }
+    }
+}
+
+fleet_event = { 
+	id = voidborn.1010
+	title = vb_rift_digsite
+	desc = voidborn.1010.desc
+	picture = GFX_evt_archaeological_dig
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1010.a
+	}
+}
+
+fleet_event = { 
+	id = voidborn.1011
+	title = "voidborn.1011.name"
+	desc = voidborn.1011.desc
+	picture = GFX_evt_zro_3
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1011.a
+	}
+}
+fleet_event = { 
+	id = voidborn.1012
+	title = "voidborn.1012.name"
+	desc = voidborn.1012.desc
+	picture = GFX_evt_zro_3
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1012.a
+	}
+}
+fleet_event = { 
+	id = voidborn.1013
+	title = "voidborn.1013.name"
+	desc = voidborn.1013.desc
+	picture = GFX_evt_zro_5
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+        owner = {
+            modify_species = {
+            }
+        }
+		name = voidborn.1013.a
+	}
+}
+fleet_event = { 
+	id = voidborn.1014
+	title = "voidborn.1014.name"
+	desc = voidborn.1014.desc
+	picture = GFX_evt_baol_2
+	show_sound = event_default
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = voidborn.1014.a
+		owner = {
+			add_relic = r_vb_void_orb
+		}
+	}
+}
+
 
 country_event = {
     id = voidborn.9998
@@ -75,6 +316,10 @@ country_event = {
             limit = {
                 is_colony = yes
                 NOT = { is_planet_class = pc_void }
+                NOT = { is_planet_class = pc_relic }
+                NOT = { is_planet_class = pc_city }
+                NOT = { is_planet_class = pc_machine }
+                NOT = { is_planet_class = pc_hive }
             }
             custom_tooltip = voidborn_world_shrouded_tt	
             hidden_effect = {

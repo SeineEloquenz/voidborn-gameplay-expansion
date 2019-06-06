@@ -1,0 +1,92 @@
+
+#dark ones homeworld
+vb_dark_ones_digsite = {
+	desc = vb_dark_ones_digsite_desc
+	stages = 5
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_F2
+		event = voidborn.1000
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F3
+		event = voidborn.1001
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F4
+		event = voidborn.1002
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_F5
+		event = voidborn.1003
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_F6
+		event = voidborn.1004
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#rift main world
+vb_rift_digsite = {
+	desc = vb_rift_digsite_desc
+	stages = 5
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_F2
+		event = voidborn.1010
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F3
+		event = voidborn.1011
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F4
+		event = voidborn.1012
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_F5
+		event = voidborn.1013
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_F6
+		event = voidborn.1014
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

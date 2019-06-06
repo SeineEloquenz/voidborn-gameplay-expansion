@@ -2,7 +2,6 @@ pc_void = {
 	entity = "shroud_planet"
 	entity_scale = @planet_standard_scale
 	icon_frame = 23
-	picture = pc_shrouded
 
 	atmosphere_color 		= hsv { 0.0 0.9 0.45	}		#DONE
 	atmosphere_intensity 	= 0.5
@@ -17,12 +16,13 @@ pc_void = {
         planet_jobs_unity_produces_mult = 0.25
         pop_government_ethic_attraction = 0.25
 		pop_growth_speed = 0.10
+		pop_environment_tolerance = -2.0
 	}
 	
 	planet_size = { min = 12 max = 25 }
 	moon_size = { min = 6 max = 12 }
 	
 	colonizable = yes
-	ideal = yes
 	starting_planet = no
+    show_city = no
 }

@@ -13,7 +13,7 @@ voidborn_void_rift_system = {
 	}
 	
 	planet = {
-		name = "House of Void"
+		name = "Ancient Void"
 		class = "pc_asteroid"
 		orbit_distance = 60
 		orbit_angle = -95
@@ -22,7 +22,7 @@ voidborn_void_rift_system = {
 	}
 	
 	planet = {
-		name = "House of Shadow"
+		name = "Ancient Shadow"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = 285
@@ -32,7 +32,7 @@ voidborn_void_rift_system = {
 	}
 	
 	planet = {
-		name = "House of Abyss"
+		name = "Ancient Abyss"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
@@ -52,7 +52,7 @@ voidborn_void_rift_system = {
 		moon = {
 			name = "Xan'Amach"
 			class = "pc_relic"
-			orbit_distance = 17
+			orbit_distance = 19
 			orbit_angle = 45
 			size = 25
 			starting_planet = yes
@@ -72,23 +72,32 @@ voidborn_void_rift_system = {
 		orbit_angle = 90
 		size = 10
 		has_ring = no
-  }
+    }
   
 	planet = {
 		name = "Ygg'Gumaz"
-		class= "pc_shrouded"
+		class= "pc_^void"
 		orbit_distance = 15
 		orbit_angle = 170
 		size = 13
 		has_ring = yes
-  }
+    }
   
 	planet = {
 		name = "Ygg'Toroz"
-		class = "pc_shrouded"
+		class = "pc_void"
 		orbit_distance = 30
 		orbit_angle = 20
 		size = 10
 		has_ring = no
-  }     
+    }     
+  
+    init_effect = {
+        save_global_event_target_as = voidborn_rift_system
+		random_system_planet = {
+			limit = { is_planet_class = pc_relic } #must be Xan'Amach
+            prevent_anomaly = yes
+            create_archaeological_site = vb_rift_digsite
+		}
+	}
 }
