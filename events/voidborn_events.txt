@@ -12,6 +12,34 @@ namespace = voidborn
 
 ##### SETUP
 
+planet_event = {
+    id = voidborn.998
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    immediate = {
+        change_pc = pc_void
+    }
+}
+
+country_event = {
+    id = voidborn.999
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    immediate = {		
+		every_planet = {
+			limit = { is_planet_class = pc_shrouded }
+            change_pc = pc_void
+		}
+    }
+}
 ##### STORY
 
 ##### ASSIMILATION

@@ -85,3 +85,6 @@
  
  opinion_voidborn:0 "Voidborn"
  opinion_void_assimilators:0 "Voidborn Assimilators"
+ 
+ pc_void:0 "Shrouded World"
+ pc_void_desc:0 "This world is surrounded by thick fog. We can feel it pulse with strange energy, this world surely brings no good..."
