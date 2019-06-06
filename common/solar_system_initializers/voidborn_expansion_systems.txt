@@ -76,7 +76,7 @@ voidborn_void_rift_system = {
   
 	planet = {
 		name = "Ygg'Gumaz"
-		class= "pc_^void"
+		class= "pc_void"
 		orbit_distance = 15
 		orbit_angle = 170
 		size = 13
