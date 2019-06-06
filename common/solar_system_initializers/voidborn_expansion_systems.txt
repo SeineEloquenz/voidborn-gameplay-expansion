@@ -55,7 +55,6 @@ voidborn_void_rift_system = {
 			orbit_distance = 19
 			orbit_angle = 45
 			size = 25
-			starting_planet = yes
 			has_ring = no
 			modifiers = none
 			
