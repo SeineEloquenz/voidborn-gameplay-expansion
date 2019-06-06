@@ -42,6 +42,49 @@ country_event = {
 }
 ##### STORY
 
+country_event = {
+    id = voidborn.9998
+    title = "voidborn.9998.name"
+    desc = "voidborn.9998.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.9998.a
+    }
+}
+
+country_event = {
+    id = voidborn.9999
+    title = "voidborn.9999.name"
+    desc = "voidborn.9999.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.9999.a
+        random_owned_planet = {
+            limit = {
+                is_colony = yes
+                NOT = { is_planet_class = pc_void }
+            }
+            custom_tooltip = voidborn_world_shrouded_tt	
+            hidden_effect = {
+                planet_event = { id = voidborn.998 }
+            }
+        }
+    }
+}
+
+
 ##### ASSIMILATION
 
 country_event = {

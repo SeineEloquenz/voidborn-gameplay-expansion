@@ -88,3 +88,16 @@
  
  pc_void:0 "Shrouded World"
  pc_void_desc:0 "This world is surrounded by thick fog. We can feel it pulse with strange energy, this world surely brings no good..."
+ 
+ r_vb_void_orb:0 "Void Orb"
+ r_vb_void_orb_desc:0 "An ancient Orb coming deep from the heart of the Abyss, a remembrance of the all consuming might, lurking in the shadows."
+ 
+ voidborn_world_shrouded_tt:0 "[this.GetName] will be shrouded by thick, dark fog..."
+ 
+ voidborn.9998.name:0 "Void Orb activated"
+ voidborn.9998.desc:0 "We channeled energy to the void orb as described in the ancient holocrons we found beside it. But nothing happened... This is very strange, maybe we miss something..?"
+ voidborn.9998.a:0 "Worrying"
+ 
+ voidborn.9999.name:0 "Void Orb activated"
+ voidborn.9999.desc:0 "We channeled energy to the void orb as our ancient masters described in their holocrons. The Orb burst with psionic strength and soon a colony we once owned was clouded in thick, dark fog. The Void has claimed another world."
+ voidborn.9999.a:0 "Darkness prevails"
