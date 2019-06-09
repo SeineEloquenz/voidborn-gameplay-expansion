@@ -1112,7 +1112,7 @@ country_event = {
 			factor = 0
 		}
 		hidden_effect = {
-            country_event = { id = voidborn.11100 }
+            country_event = { id = voidborn.11101 }
             event_target:corruption_demander = {
                 country_event = { id = voidborn.103 }
             }
@@ -1347,6 +1347,84 @@ country_event = {
     option = {
         name = voidborn.11100.a
         change_dominant_species = { species = event_target:species_scope change_all = yes }
+        add_modifier = { modifier = voidborn_force_converted days = 3600 }
+        set_subject_of = { who = event_target:vb_assimilator subject_type = vassal }
+        copy_ethos_and_authority = event_target:vb_assimilator
+        event_target:vb_assimilator = { end_rivalry = prev }
+        end_rivalry = event_target:vb_assimilator
+        every_system_within_border = {
+            limit = {
+                from = { has_claim = prev }
+            }
+            remove_claims = { who = from }
+        }			
+        every_country = {
+            limit = { 	
+                OR = {
+                    is_in_federation_with = event_target:vb_assimilator 
+                    AND = {
+                        is_subject = yes
+                        exists = overlord
+                        overlord = { is_same_value = event_target:vb_assimilator }
+                    }
+                }
+            }
+            end_rivalry = this
+            this = { end_rivalry = prev }
+            every_system_within_border = {
+                limit = {
+                    this = { has_claim = prev }
+                }
+                remove_claims = { who = this }
+            }
+        }
+        add_threat = {
+            who = event_target:vb_assimilator
+            amount = 0.10
+        }
+        leave_alliance = { override_requirements = yes }
+        every_owned_pop = {
+            limit = {
+                OR = {
+                    is_species_class = MAM
+                    is_species_class = HUM
+                }
+            }
+            random_list = {
+                10 = {
+                    change_species = event_target:species_scope
+                }
+                40 = {
+                    save_event_target_as = expel_pop
+                    any_playable_country = {
+                        random_owned_planet = {
+                            resettle_pop = {
+                                pop = event_target:expel_pop
+                                planet = this
+                            }
+                        }
+                    }
+                }
+                50 = {}
+            }
+        }
+    }
+}
+
+country_event = {
+    id = voidborn.11101
+    title = "voidborn.11100.name"
+    desc = "voidborn.11100.desc"
+	picture = GFX_evt_voidborn_corruption
+    hide_window = no
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    option = {
+        name = voidborn.11100.a
+        change_dominant_species = { species = event_target:species_scope change_all = yes }
         every_owned_pop = {
             limit = {
                 OR = {
@@ -1373,6 +1451,15 @@ country_event = {
             }
         }
         add_modifier = { modifier = voidborn_force_converted days = 3600 }
+        from = {
+            add_threat = {
+                who = root
+                amount = 0.10
+            }				
+        }
+        from = {
+            leave_alliance = { override_requirements = yes }
+        }
     }
 }
 

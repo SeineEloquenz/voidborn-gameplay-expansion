@@ -25,6 +25,7 @@ wg_void_assimilation = {
     on_accept = {
 		custom_tooltip = wg_void_assimilation_ttp
         hidden_effect = {
+            save_event_target_as = vb_assimilator
             owner_species = {
                 save_event_target_as = species_scope
             }
