@@ -93,3 +93,44 @@ wg_void_abduct = {
 		weight = 1000
 	}
 }
+
+wg_destroy_void_orb = {
+	casus_belli = cb_destroy_void_orb
+    
+    icon = GFX_wg_destroy_void_orb
+	
+	hide_if_no_cb = yes
+	total_war = no
+	
+	surrender_acceptance = -250
+
+	potential = {
+		from = {
+            is_species_class = CORRUPTED
+            has_country_flag = void_orb_found
+        }
+        NOT = { has_trait = trait_pc_void_preference }
+	}
+    
+	possible = {
+		always = yes
+	}
+    
+    on_accept = {
+		custom_tooltip = wg_destroy_void_orb_tt
+        hidden_effect = {
+            from = {
+                save_event_target_as = void_orb_owner
+                country_event = { id = voidborn.9995 }
+            }
+            every_country = {
+                limit = { NOT = { is_same_value = event_target:void_orb_owner } }
+                country_event = { id = voidborn.9994 }
+            }
+        }
+    }
+	
+	ai_weight = {
+		weight = 1000
+	}
+}

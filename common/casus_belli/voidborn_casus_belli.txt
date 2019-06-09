@@ -37,3 +37,29 @@ cb_void_abduct = {
 		}
 	}
 }
+
+cb_destroy_void_orb = {
+    show_in_diplomacy = yes
+    show_notification = no
+    
+    potential = {
+        NOT = { has_trait = trait_pc_void_preference }
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = from } }
+		}
+        
+        ANY_COUNTRY = {
+            has_country_flag = void_orb_found
+            has_communications = PREV
+        }
+    }
+    
+    is_valid = {
+		NOT = { is_overlord_to = FROM }
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = from } }
+		}
+    }
+}

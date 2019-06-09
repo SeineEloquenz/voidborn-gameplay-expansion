@@ -93,6 +93,14 @@
  pc_void:0 "Shrouded World"
  pc_void_desc:0 "This world is surrounded by thick fog. We can feel it pulse with strange energy, this world surely brings no good..."
  
+ voidborn.9994.name:0 "Void Orb destroyed"
+ voidborn.9994.desc:0 "We receive great news! The war over the Void Orb concluded in favor of the galaxy! The artifact was destroyed according to the peace treaty and the galaxy can sleep in peace again."
+ voidborn.9994.a:0 "Cheer, for we are safe once more!"
+ 
+ voidborn.9995.name:0 "Void Orb destroyed"
+ voidborn.9995.desc:0 "We were forced into a humiliating defeat and to destroy the Void Orb. We failed the Void. We failed our masters. This is the darkest hour in [Root.GetSpeciesName] history..."
+ voidborn.9995.a:0 "The Void does not forgive"
+ 
  voidborn.9996.name:0 "Void Orb discovered"
  voidborn.9996.desc:0 "We receive worrying news from [prev.GetName]! It seems like they discovered an ancient, dangerous artifact from a system deep in the galactic core. What this artifact may enable them to do is still unknown, but it surely can't be good for us."
  voidborn.9996.a:0 "Troubling"
@@ -120,6 +128,13 @@
  shroud_world_tt:0 "The world will be covered with thick, dark fog. Our people will become more productive. Foreign species however will no longer be able to live on the dark surface."
  vb_rift_system_found_tt:0 ""
  need_void_orb_tt:0 "We need to discover the ancient artifact the Old Ones used to shroud worlds..."
+ wg_destroy_void_orb_tt:0 "The Void Orb will be destroyed!"
+ war_goal_wg_destroy_void_orb:0 "Destroy the Void Orb"
+ war_goal_wg_destroy_void_orb_desc:0 "The Void Orb, allowing for the Shrouding of Worlds will be destroyed!"
+ casus_belli_cb_destroy_void_orb:0 "Destroy the Void Orb"
+ void_orb_broken:0 "The Void Orb is broken and can therefore not be used. However, as a Remembrance of the grand humiliation our country had to endure, it strongly increases the unity and government ethics attraction of our people"
+ r_vb_destroyed_void_orb:0 "Destroyed Void Orb"
+ r_vb_destroyed_void_orb_desc:0 "The shattered remains of the once great Void Orb"
  
  vb_dark_ones_digsite:0 "The Void remembers"
  vb_dark_ones_digsite_desc:0 "Ygg'Xaraz, the capital of the Dark Ones, the first servants of the Void, a city world whose dark history is still visible through even the most devastated remains.\n\nAs our archaeologists embark on their quest to unravel their knowledge, they can already determine the huge statues and pyramids from the atmosphere. This world truly was the center of the galaxy long ago and we will unravel its secrets."

@@ -53,3 +53,42 @@ r_vb_void_orb = {
 		}
 	}
 }
+
+r_vb_destroyed_void_orb = {
+	activation_duration = @triumph_duration
+	portrait = "GFX_relic_void_orb"
+	sound = "sfx_relic_activation_void_orb"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			influence = @activation_cost
+		}
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+	
+	triggered_country_modifier = {
+		potential = {
+            is_species_class = CORRUPTED
+		}
+        planet_jobs_unity_produces_mult = 0.25
+        pop_government_ethic_attraction = 0.50
+	}
+
+	score = 5000
+
+	active_effect = {
+		custom_tooltip = void_orb_broken
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+            always = no
+		}
+	}
+}
