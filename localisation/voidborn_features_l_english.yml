@@ -139,7 +139,7 @@
  vb_dark_ones_digsite:0 "The Void remembers"
  vb_dark_ones_digsite_desc:0 "Ygg'Xaraz, the capital of the Dark Ones, the first servants of the Void, a city world whose dark history is still visible through even the most devastated remains.\n\nAs our archaeologists embark on their quest to unravel their knowledge, they can already determine the huge statues and pyramids from the atmosphere. This world truly was the center of the galaxy long ago and we will unravel its secrets."
  vb_rift_digsite:0 "Whispers in the Dark"
- vb_rift_digsite_desc:0 ""
+ vb_rift_digsite_desc:0 "The ancient world of Xan'Amach. Here the Voidborn originated millions of years ago, long before the species of today even roamed their remote home worlds."
  
  voidborn.1000.name:0 "Void Ritual Space"
  voidborn.1000.desc:0 "Today, we discovered a ritual space near the palace ruins, we believe here the Old Ones offered foreign species to the Void for its blessing. Although the Old Ones have vanished aeons ago, we can still feel the dark energy of the void, this place is soaked in. We want to stay.\n\nBut We have not yet found anything substantial. We need to go on."
@@ -161,23 +161,23 @@
  voidborn.1004.desc:0 "We penetrated the last traps in the temple and found the center of the complex. A long, spiral staircase, leading deep into the world itself. Thousands of steps, spiraling downwards, some of our staff went mad climbing down the stairs and had to be removed from the expedition. But after long days we heard again from the teams underground. There it was, there was what our long dead masters told us to find and defend. We found what we searched for so long centuries. We found the anchor, the device which, once activated, reestablishes the connection to the center of the void in the galaxy. We activated it, the surface of the world began to vibrate as purple rays of light left the surface of the small singularity inside the room. And there it was, the bridge had appeared in the system. Now we'll enter the Maw of Darkness."
  voidborn.1004.a:0 "Into the Maw we go"
  
- voidborn.1010.name:0 ""
+ voidborn.1010.name:0 "Finding what is ours"
  voidborn.1010.desc:0 ""
- voidborn.1010.a:0 ""
+ voidborn.1010.a:0 "We are on the right track"
  
- voidborn.1011.name:0 ""
+ voidborn.1011.name:0 "Temple of Old"
  voidborn.1011.desc:0 ""
- voidborn.1011.a:0 ""
+ voidborn.1011.a:0 "Magnificent"
  
- voidborn.1012.name:0 ""
+ voidborn.1012.name:0 "Xan'Amach"
  voidborn.1012.desc:0 ""
- voidborn.1012.a:0 ""
+ voidborn.1012.a:0 "How small we are"
  
- voidborn.1013.name:0 ""
+ voidborn.1013.name:0 "Void Relic"
  voidborn.1013.desc:0 ""
- voidborn.1013.a:0 ""
+ voidborn.1013.a:0 "We are ready"
  
- voidborn.1014.name:0 ""
+ voidborn.1014.name:0 "What was, will be"
  voidborn.1014.desc:0 ""
- voidborn.1014.a:0 ""
+ voidborn.1014.a:0 "Ascension"
  
