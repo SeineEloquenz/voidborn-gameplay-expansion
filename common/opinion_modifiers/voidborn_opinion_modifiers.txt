@@ -10,6 +10,7 @@ opinion_void_assimilators = {
 		base = -25
 	}
 }
+
 opinion_voidborn = {
 
     trigger = {
@@ -19,4 +20,18 @@ opinion_voidborn = {
 	opinion = {
 		base = -10
 	}
+}
+
+opinion_shrouded_our_world = {
+    
+    trigger = {
+        always = no
+    }
+    opinion = {
+        base = -100
+    }
+    
+    decay = {
+        base = 2	
+    }
 }

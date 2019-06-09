@@ -85,9 +85,21 @@
  
  opinion_voidborn:0 "Voidborn"
  opinion_void_assimilators:0 "Voidborn Assimilators"
+ opinion_shrouded_our_world:0 "Shrouded our World"
+ 
+ decision_convert_to_void_world:0 "Convert to Shrouded World"
+ decision_convert_to_void_world_desc:0 "We will use the dark energies of the Void to turn this World into a Shrouded World, a world covered in thick, dark fog, which tightens the grip our species has on their connection to the Void."
  
  pc_void:0 "Shrouded World"
  pc_void_desc:0 "This world is surrounded by thick fog. We can feel it pulse with strange energy, this world surely brings no good..."
+ 
+ voidborn.9996.name:0 "Void Orb discovered"
+ voidborn.9996.desc:0 "We receive worrying news from [prev.GetName]! It seems like they discovered an ancient, dangerous artifact from a system deep in the galactic core. What this artifact may enable them to do is still unknown, but it surely can't be good for us."
+ voidborn.9996.a:0 "Troubling"
+ 
+ voidborn.9997.name:0 "World plunged into darkness"
+ voidborn.9997.desc:0 "We receive worrying news from [changed_planet_owner.GetName]! It seems like one of their worlds was, without a warning, plunged into total darkness and consumed in thick, dark fog...\n\n Maybe the recently discovered Void Orb has something to do with it..."
+ voidborn.9997.a:0 "Worrying"
  
  voidborn.9998.name:0 "Void Orb activated"
  voidborn.9998.desc:0 "We channeled energy to the void orb as described in the ancient holocrons we found beside it. But nothing happened... This is very strange, maybe we miss something..?"
@@ -105,6 +117,7 @@
  
  voidborn_world_shrouded_tt:0 "[this.GetName] will be shrouded by thick, dark fog..."
  voidborn_void_habitability_tt:0 ""
+ shroud_world_tt:0 "The world will be covered with thick, dark fog. Our people will become more productive. Foreign species however will no longer be able to live on the dark surface."
  vb_rift_system_found_tt:0 ""
  vb_dark_ones_digsite:0 "The Void remembers"
  vb_dark_ones_digsite_desc:0 "Ygg'Xaraz, the capital of the Dark Ones, the first servants of the Void, a city world whose dark history is still visible through even the most devastated remains.\n\nAs our archaeologists embark on their quest to unravel their knowledge, they can already determine the huge statues and pyramids from the atmosphere. This world truly was the center of the galaxy long ago and we will unravel its secrets."

@@ -298,7 +298,7 @@ fleet_event = {
 		}
 	}
 }
-fleet_event = { 
+fleet_event = {
 	id = voidborn.1014
 	title = "voidborn.1014.name"
 	desc = voidborn.1014.desc
@@ -314,7 +314,48 @@ fleet_event = {
 		name = voidborn.1014.a
 		owner = {
 			add_relic = r_vb_void_orb
+            hidden_effect = {
+                every_country = {
+                    limit = {
+                        NOT = { is_same_value = PREV }
+                        has_communications = PREV
+                    }
+                    country_event = { id = voidborn.9996 }
+                }
+            }
 		}
+	}
+}
+
+country_event = { 
+	id = voidborn.9996
+	title = "voidborn.9996.name"
+	desc = voidborn.9996.desc
+	picture = GFX_evt_baol_2
+	show_sound = event_default
+
+	is_triggered_only = yes
+    
+    trigger = {}
+
+	option = {
+		name = voidborn.9996.a
+	}
+}
+
+country_event = { 
+	id = voidborn.9997
+	title = "voidborn.9997.name"
+	desc = voidborn.9997.desc
+	picture = GFX_evt_baol_2
+	show_sound = event_default
+
+	is_triggered_only = yes
+    
+    trigger = {}
+
+	option = {
+		name = voidborn.9997.a
 	}
 }
 
@@ -348,18 +389,59 @@ country_event = {
     
     option = {
         name = voidborn.9999.a
-        random_owned_planet = {
+        save_event_target_as = vb_orb_owner
+        if = {
             limit = {
-                is_colony = yes
-                NOT = { is_planet_class = pc_void }
-                NOT = { is_planet_class = pc_relic }
-                NOT = { is_planet_class = pc_city }
-                NOT = { is_planet_class = pc_machine }
-                NOT = { is_planet_class = pc_hive }
+                any_owned_planet = {
+                    is_colony = yes
+                    NOT = { is_planet_class = pc_void }
+                    NOT = { is_planet_class = pc_relic }
+                    NOT = { is_planet_class = pc_city }
+                    NOT = { is_planet_class = pc_machine }
+                    NOT = { is_planet_class = pc_hive }
+                    
+                } 
             }
-            custom_tooltip = voidborn_world_shrouded_tt	
-            hidden_effect = {
-                planet_event = { id = voidborn.998 }
+            random_owned_planet = {
+                limit = {
+                    is_colony = yes
+                    NOT = { is_planet_class = pc_void }
+                    NOT = { is_planet_class = pc_relic }
+                    NOT = { is_planet_class = pc_city }
+                    NOT = { is_planet_class = pc_machine }
+                    NOT = { is_planet_class = pc_hive }
+                }
+                custom_tooltip = voidborn_world_shrouded_tt	
+                hidden_effect = {
+                    planet_event = { id = voidborn.998 }
+                }
+            }
+        }
+        else = {
+            random_planet = {
+                limit = {
+                    is_colony = yes
+                    NOT = { is_planet_class = pc_void }
+                    NOT = { is_planet_class = pc_relic }
+                    NOT = { is_planet_class = pc_city }
+                    NOT = { is_planet_class = pc_machine }
+                    NOT = { is_planet_class = pc_hive }
+                }
+                custom_tooltip = voidborn_world_shrouded_tt
+                hidden_effect = {
+                    owner = {
+                        save_event_target_as = changed_planet_owner
+                        add_opinion_modifier = {
+                            modifier = opinion_shrouded_our_world
+                            who = event_target:vb_orb_owner
+                        }
+                    }
+                    planet_event = { id = voidborn.998 }
+                    every_country = {
+                        limit = { has_communications = event_target:changed_planet_owner }
+                        country_event = { id = voidborn.9997 }
+                    }
+                }
             }
         }
     }
