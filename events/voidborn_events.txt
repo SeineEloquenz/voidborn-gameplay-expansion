@@ -1402,7 +1402,7 @@ planet_event = {
             create_pop = {
                 species = owner_main_species
 			}
-            FROM = {
+            owner = {
                 change_variable = { which = pvac value = 1 }
             }
 		}
