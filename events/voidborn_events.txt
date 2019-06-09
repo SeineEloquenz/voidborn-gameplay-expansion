@@ -314,6 +314,7 @@ fleet_event = {
 		name = voidborn.1014.a
 		owner = {
 			add_relic = r_vb_void_orb
+            set_country_flag = void_orb_found
             hidden_effect = {
                 every_country = {
                     limit = {

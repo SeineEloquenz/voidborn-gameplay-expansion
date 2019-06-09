@@ -119,10 +119,13 @@
  voidborn_void_habitability_tt:0 ""
  shroud_world_tt:0 "The world will be covered with thick, dark fog. Our people will become more productive. Foreign species however will no longer be able to live on the dark surface."
  vb_rift_system_found_tt:0 ""
+ need_void_orb_tt:0 "We need to discover the ancient artifact the Old Ones used to shroud worlds..."
+ 
  vb_dark_ones_digsite:0 "The Void remembers"
  vb_dark_ones_digsite_desc:0 "Ygg'Xaraz, the capital of the Dark Ones, the first servants of the Void, a city world whose dark history is still visible through even the most devastated remains.\n\nAs our archaeologists embark on their quest to unravel their knowledge, they can already determine the huge statues and pyramids from the atmosphere. This world truly was the center of the galaxy long ago and we will unravel its secrets."
  vb_rift_digsite:0 "Whispers in the Dark"
  vb_rift_digsite_desc:0 ""
+ 
  voidborn.1000.name:0 "Void Ritual Space"
  voidborn.1000.desc:0 "Today, we discovered a ritual space near the palace ruins, we believe here the Old Ones offered foreign species to the Void for its blessing. Although the Old Ones have vanished aeons ago, we can still feel the dark energy of the void, this place is soaked in. We want to stay.\n\nBut We have not yet found anything substantial. We need to go on."
  voidborn.1000.a:0 "The Void is benevolent..."
