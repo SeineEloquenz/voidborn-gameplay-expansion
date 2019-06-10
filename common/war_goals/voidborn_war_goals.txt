@@ -6,7 +6,7 @@ wg_void_assimilation = {
 	hide_if_no_cb = no
 	total_war = no
 	
-	surrender_acceptance = -1000
+	surrender_acceptance = -100
 
 	potential = {
 		from = {

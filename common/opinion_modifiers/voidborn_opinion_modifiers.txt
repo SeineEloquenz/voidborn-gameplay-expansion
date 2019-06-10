@@ -22,6 +22,28 @@ opinion_voidborn = {
 	}
 }
 
+opinion_voidborn_to_voidborn_assimilator = {
+
+    trigger = {
+        FROM = { AND = { is_species_class = CORRUPTED has_valid_civic = civic_void_assimilation } }
+        is_same_species_class = FROM
+    }
+	opinion = {
+		base = 50
+	}
+}
+
+opinion_voidborn_to_voidborn = {
+
+    trigger = {
+        FROM = { is_species_class = CORRUPTED }
+        is_same_species_class = FROM
+    }
+	opinion = {
+		base = 25
+	}
+}
+
 opinion_shrouded_our_world = {
     
     trigger = {

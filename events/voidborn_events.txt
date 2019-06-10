@@ -1424,6 +1424,7 @@ country_event = {
     
     option = {
         name = voidborn.11100.a
+        add_modifier = { modifier = voidborn_force_converted days = 3600 }
         change_dominant_species = { species = event_target:species_scope change_all = yes }
         every_owned_pop = {
             limit = {
@@ -1449,16 +1450,6 @@ country_event = {
                 }
                 50 = {}
             }
-        }
-        add_modifier = { modifier = voidborn_force_converted days = 3600 }
-        from = {
-            add_threat = {
-                who = root
-                amount = 0.10
-            }				
-        }
-        from = {
-            leave_alliance = { override_requirements = yes }
         }
     }
 }

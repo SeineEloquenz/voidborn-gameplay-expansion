@@ -85,6 +85,8 @@
  
  opinion_voidborn:0 "Voidborn"
  opinion_void_assimilators:0 "Voidborn Assimilators"
+ opinion_voidborn_to_voidborn_assimilator:0 "Voidborn Assimilators"
+ opinion_voidborn_to_voidborn:0 "Fellow Voidborn"
  opinion_shrouded_our_world:0 "Shrouded our World"
  
  decision_convert_to_void_world:0 "Convert to Shrouded World"
