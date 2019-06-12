@@ -1535,3 +1535,16 @@ country_event = {
         change_variable = { which = pvac value = 500 }
     }
 }
+
+country_event = {
+    id = voidborn.30001
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    
+    immediate = {
+        set_country_flag = void_orb_found
+    }
+}

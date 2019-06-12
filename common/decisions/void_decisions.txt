@@ -25,7 +25,9 @@ decision_convert_to_void_world = {
     
     allow = {
         custom_tooltip = need_void_orb_tt
-        has_country_flag = void_orb_found
+        owner = {
+            has_country_flag = void_orb_found
+        }
     }
 	
 	effect = {
