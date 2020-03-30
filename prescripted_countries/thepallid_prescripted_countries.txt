@@ -20,6 +20,7 @@
 	adjective="Pallid"
 	authority="auth_oligarchic"
 	government="gov_void_covenant"
+	origin = "origin_void_touched"
 	advisor_voice_type="l_spiritualist"
 	planet_name="Umbra"
 	planet_class="pc_alpine"
@@ -87,6 +88,7 @@
 	adjective="Pallid"
 	authority="auth_hive_mind"
 	government="gov_void_swarm"
+	origin = "origin_void_touched"
 	advisor_voice_type="l_hivemind"
 	planet_name="Umbra"
 	planet_class="pc_alpine"
@@ -163,6 +165,7 @@
 	adjective="Dark"
 	authority="auth_imperial"
 	government="gov_void_monarchy"
+	origin = "origin_syncretic_evolution"
 	advisor_voice_type="l_hivemind"
 	planet_name="Umbra"
 	planet_class="pc_alpine"
@@ -201,7 +204,7 @@
 	ethic="ethic_authoritarian"
 	ethic="ethic_fanatic_spiritualist"
 	civics={
-		"civic_syncretic_evolution"
 		"civic_void_assimilation"
+        "civic_imperial_cult"
 	}
 }

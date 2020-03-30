@@ -1,0 +1,9 @@
+# Resolution Categories for Galactic Community
+
+resolution_category_voidborn = {
+	group = politics_culture
+	icon = GFX_voidborn_resolution
+	resolution_types = {
+		"resolution_void_assimilation"
+	}
+}

@@ -1,0 +1,22 @@
+origin_void_touched = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_void_touched.dds"
+	picture = GFX_origin_void_touched
+    
+	potential = {
+        always = yes
+    }
+    
+	possible = {
+	}
+    
+	random_weight = {
+		base = 0
+	}
+    
+	description = "origin_tooltip_void_touched_effects"
+    
+	modifier = {
+        country_base_sr_zro_produces_add = 1
+	}
+}

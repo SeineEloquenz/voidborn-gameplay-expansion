@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_voidborn_resolution"
+		texturefile = "gfx/interface/icons/resolutions/voidborn_resolutions.dds"
+	}
+}
+	

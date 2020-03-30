@@ -1,0 +1,8 @@
+  
+sound =
+{
+	name = "sfx_relic_activation_void_orb"
+	file = "sfx_relic_activation_void_orb.wav"
+	always_load = no
+	volume = 1
+}

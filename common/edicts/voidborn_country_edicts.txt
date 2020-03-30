@@ -1,13 +1,11 @@
 voidborn_ui_assimilation_edict = {
 	length = 0
 	resources = { category = edicts cost = { } }
+
 	potential = {
 		is_ai = no
-	}
-    
-    potential = {
         has_valid_civic = civic_void_assimilation
-    }
+	}
 
     allow = {
         always = yes

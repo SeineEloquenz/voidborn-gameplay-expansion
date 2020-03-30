@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_origin_void_touched"
+		texturefile = "gfx/event_pictures/origins/origin_void_touched.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+	

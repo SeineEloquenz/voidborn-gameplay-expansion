@@ -23,7 +23,49 @@ event = {
     immediate = {
         event_target:voidborn_yggxaraz = {
             create_archaeological_site = vb_dark_ones_digsite
+            solar_system.owner.species = {  
+                save_global_event_target_as = voidborn_species
+            }
+            solar_system.owner = {
+                save_global_event_target_as = voidborn_empire
+            }
         }
+    }
+}
+
+country_event = {
+	id = voidborn.2
+	title = "voidborn.2.name"
+	desc = "voidborn.2.desc"
+	
+	picture = GFX_evt_psionics
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	trigger = {
+		has_origin = origin_void_touched
+		NOT = { has_technology = tech_psionic_theory }
+		num_ascension_perks > 0
+	}
+	
+	option = {
+		name = EXCELLENT
+		give_technology = { tech = tech_psionic_theory }
+	}
+}
+
+#Galactic Focus setup event
+country_event = {
+    id = voidborn.3
+    hide_window = yes
+    is_triggered_only = yes
+    
+    trigger = {
+    }
+    immediate = {
+		country_event = { id = voidborn.11101 }
     }
 }
 
@@ -145,7 +187,7 @@ fleet_event = {
                     }
                     modify_species = {
                         species = this
-                        add_trait = pc_void_habitability
+                        add_trait = trait_pc_void_preference
                         ideal_planet_class = pc_void
                     }
                 }
@@ -1069,7 +1111,6 @@ country_event = {
 		}
 		hidden_effect = {
             save_event_target_as = corruption_demander
-            save_event_target_as = species_scope
             event_target:corruption_demand_target = {
                 country_event = { id = voidborn.102 }
             }
@@ -1346,7 +1387,7 @@ country_event = {
     
     option = {
         name = voidborn.11100.a
-        change_dominant_species = { species = event_target:species_scope change_all = yes }
+        change_dominant_species = { species = event_target:voidborn_species change_all = no }
         add_modifier = { modifier = voidborn_force_converted days = 3600 }
         set_subject_of = { who = event_target:vb_assimilator subject_type = vassal }
         copy_ethos_and_authority = event_target:vb_assimilator
@@ -1373,9 +1414,11 @@ country_event = {
             this = { end_rivalry = prev }
             every_system_within_border = {
                 limit = {
-                    this = { has_claim = prev }
+                    owner = {
+                        this = { has_claim = prev }
+                    }
                 }
-                remove_claims = { who = this }
+                remove_claims = { who = owner }
             }
         }
         add_threat = {
@@ -1391,12 +1434,12 @@ country_event = {
                 }
             }
             random_list = {
-                10 = {
-                    change_species = event_target:species_scope
+                40 = {
+                    change_species = event_target:voidborn_species
                 }
                 40 = {
                     save_event_target_as = expel_pop
-                    any_playable_country = {
+                    random_playable_country = {
                         random_owned_planet = {
                             resettle_pop = {
                                 pop = event_target:expel_pop
@@ -1405,7 +1448,9 @@ country_event = {
                         }
                     }
                 }
-                50 = {}
+                20 = {
+                
+                }
             }
         }
     }
@@ -1425,7 +1470,7 @@ country_event = {
     option = {
         name = voidborn.11100.a
         add_modifier = { modifier = voidborn_force_converted days = 3600 }
-        change_dominant_species = { species = event_target:species_scope change_all = yes }
+        change_dominant_species = { species = event_target:voidborn_species change_all = no }
         every_owned_pop = {
             limit = {
                 OR = {
@@ -1434,12 +1479,12 @@ country_event = {
                 }
             }
             random_list = {
-                10 = {
-                    change_species = event_target:species_scope
+                40 = {
+                    change_species = event_target:voidborn_species
                 }
                 40 = {
                     save_event_target_as = expel_pop
-                    any_playable_country = {
+                    random_playable_country = {
                         random_owned_planet = {
                             resettle_pop = {
                                 pop = event_target:expel_pop
@@ -1448,7 +1493,9 @@ country_event = {
                         }
                     }
                 }
-                50 = {}
+                20 = {
+                
+                }
             }
         }
     }
@@ -1469,7 +1516,10 @@ planet_event = {
 			NOT = {
 				is_same_species = owner_species
             }
-            is_species_class = HUM
+            OR = {
+                is_species_class = HUM
+                is_species_class = MAM
+            }
 		}
 		is_controlled_by = FROM
 	}

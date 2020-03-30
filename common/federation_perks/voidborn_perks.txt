@@ -1,0 +1,78 @@
+#Perks Example
+#<perk_name>={
+#	Modifier for federation scope
+#	federation_modifier = {}
+#	Modifier for all members (leader included)
+#	members_modifier = {}
+#	Modifier for exclusevely leader
+#	leader_modifier = {}
+#	On activate effect in federation scope
+#	on_activate = {}
+#	On deactivate effect in federation scope
+#}
+
+voidborn_federation_passive = {
+	members_modifier = {
+		description = voidborn_federation_passive_effect
+		starbase_shipyard_build_speed_mult = 0.25
+	}
+	on_activate = {
+		set_diplomacy_action_setting = {
+			action = action_ask_to_leave_federation
+			settings = {
+				acceptance_type = leader
+			}
+		}
+	}
+	on_deactivate = {
+		set_diplomacy_action_setting = {
+			action = action_ask_to_leave_federation 
+			settings = {
+				acceptance_type = default
+			}
+		}
+	}
+}
+
+voidborn_influence = {
+	leader_modifier = {
+		description = voidborn_influence_effect
+		country_influence_produces_add = 1
+	}
+}
+
+voidborn_psychic_pursuit = {
+	members_modifier = {
+		description = voidborn_psychic_pursuit_effect
+		country_sr_zro_produces_add = 1
+		category_psionics_research_speed_mult = 1.10
+	}
+}
+
+voidborn_one_voice = {
+	federation_modifier = {
+		description = voidborn_one_voice_effect
+		federation_leader_diplo_weight_from_members_mult = 0.50
+	}
+}
+
+voidborn_cohesion_1 = {
+	federation_modifier = {
+		description = cohesion_join_1_effect
+		federation_join_malus_mult = -0.5
+	}
+}
+
+voidborn_cohesion_2 = {
+	federation_modifier = {
+		description = cohesion_join_1_effect
+		federation_join_malus_mult = -0.5
+	}
+}
+
+voidborn_cohesion_3 = {
+	federation_modifier = {
+		description = cohesion_join_1_effect
+		federation_join_malus_mult = -0.5
+	}
+}
