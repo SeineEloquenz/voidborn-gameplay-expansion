@@ -56,7 +56,7 @@ country_event = {
 	}
 }
 
-#Galactic Focus setup event
+#assimilation resolution setup event
 country_event = {
     id = voidborn.3
     hide_window = yes
@@ -66,6 +66,34 @@ country_event = {
     }
     immediate = {
 		country_event = { id = voidborn.11101 }
+    }
+}
+
+#void shrouding yearly pulse planet selector
+country_event = {
+    id = voidborn.4
+    hide_window = yes
+    trigger = {
+        
+    }
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                has_global_flag = void_shrouding_enabled
+            }
+            random_planet = {
+                limit = {
+                    is_colony = yes
+                    NOT = { is_planet_class = pc_void }
+                    NOT = { is_planet_class = pc_relic }
+                    NOT = { is_planet_class = pc_city }
+                    NOT = { is_planet_class = pc_machine }
+                    NOT = { is_planet_class = pc_hive }
+                }
+                planet_event = { id = voidborn.998 }
+            }
+        }
     }
 }
 

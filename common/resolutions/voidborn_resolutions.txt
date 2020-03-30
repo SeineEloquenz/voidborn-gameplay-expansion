@@ -38,7 +38,7 @@ resolution_void_assimilation = {
 	resources = {
 		category = resolutions
 		cost = {
-			influence = @resolution_cost_t1
+			influence = @resolution_cost_t4
 		}
 	}
 	target = no
@@ -80,5 +80,82 @@ resolution_void_assimilation = {
 			factor = 1000
 			has_civic = civic_void_assimilation
 		}
+	}
+}
+resolution_void_shrouding = {
+	icon = GFX_voidborn_resolution
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = @resolution_cost_t5
+		}
+	}
+
+	target = no
+    
+	effect = {
+		custom_tooltip = resolution_void_shrouding_success
+        hidden_effect = {
+			set_global_flag = void_shrouding_enabled
+        }
+	}
+
+	fail_effects = {
+	}
+
+	potential = {
+		NOT = {
+			has_global_flag = void_shrouding_enabled
+		}
+	}
+    
+	ai_weight = {
+		weight = @resolution_weight_hated
+        
+        modifier = {
+            factor = 1000
+            owner_species = {
+                has_trait = trait_pc_void_preference
+            }
+        }
+	}
+}
+
+resolution_void_shrouding_repeal = {
+	icon = GFX_voidborn_resolution
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = @resolution_cost_t2
+		}
+	}
+
+	target = no
+    
+	effect = {
+		custom_tooltip = resolution_void_shrouding_repeal_success
+        hidden_effect = {
+			remove_global_flag = void_shrouding_enabled
+        }
+	}
+
+	fail_effects = {
+	}
+
+	potential = {
+		has_global_flag = void_shrouding_enabled
+	}
+    
+	ai_weight = {
+		weight = @resolution_weight_loved
+        
+        modifier = {
+            factor = -1000
+            owner_species = {
+				has_trait = trait_pc_void_preference
+            }
+        }
 	}
 }

@@ -192,11 +192,17 @@
  
  voidborn.2.name:0 "An insight"
  voidborn.2.desc:0 "The collective minds of our species felt something... strange... We should investigate this..."
- 
+
+ resolution_category_voidborn:0 "The Void"
  resolution_void_assimilation:0 "Void Assimilation"
  resolution_void_assimilation_desc:0 "The galactic community might serve the void well...What force could not achieve before, democracy might."
  resolution_void_assimilation_success:0 "The whole galaxy serves the void..."
- resolution_category_voidborn:0 "The Void"
+ resolution_void_shrouding:0 "Void Shrouding"
+ resolution_void_shrouding_desc:0 "Every year a random inhabited world will be turned into a void world"
+ resolution_void_shrouding_success:0 "The Void claims the galaxy"
+ resolution_void_shrouding_repeal:0 "Repeal Void Shrouding"
+ resolution_void_shrouding_repeal_desc:0 "Repeals the Void Shrouding Resolution"
+ resolution_void_shrouding_repeal_success:0 "The Void has been stopped. But the damage it has already caused cannot be undone..."
  
  voidborn_federation:0 "Servants of the Void"
  voidborn_federation_desc:0 "This federation aims to bring the whole Galaxy into its fold under the Voids rule. It is highly centralised under its leader, the Voice of the Void."

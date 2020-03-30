@@ -13,5 +13,6 @@ on_game_start = {
 on_yearly_pulse_country = {
 	events = {
 		voidborn.11000 #Assimilated pop count trigger event
+		voidborn.4 #yearly pulse for shrouding resolution
 	}
 }
