@@ -48,7 +48,7 @@ voidborn_federation = {
 		level_2 = {
 			experience = @xp_to_level_3
 			perks = {
-                voidborn_cohesion_1
+                voidborn_cohesion
 				diplomacy_upkeep_1
 				extra_envoy_1
 			}
@@ -57,7 +57,7 @@ voidborn_federation = {
 		level_3 = {
 			experience = @xp_to_level_4
 			perks = {
-                voidborn_cohesion_2
+                voidborn_loyalty
 				voidborn_psychic_pursuit
 				president_keep_navy_1
 			}
@@ -66,7 +66,7 @@ voidborn_federation = {
 		level_4 = {
 			experience = @xp_to_level_5
 			perks = {
-                voidborn_cohesion_3
+                voidborn_stability
 				voidborn_one_voice
 			}
 		}

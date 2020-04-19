@@ -14,7 +14,8 @@
 voidborn_federation_passive = {
 	members_modifier = {
 		description = voidborn_federation_passive_effect
-		starbase_shipyard_build_speed_mult = 0.25
+		pop_ethic_spiritualist_attraction_mult = 0.30
+		pop_ethics_shift_speed_mult = 0.50
 	}
 	on_activate = {
 		set_diplomacy_action_setting = {
@@ -56,23 +57,23 @@ voidborn_one_voice = {
 	}
 }
 
-voidborn_cohesion_1 = {
+voidborn_cohesion = {
 	federation_modifier = {
 		description = cohesion_join_1_effect
 		federation_join_malus_mult = -0.5
 	}
 }
 
-voidborn_cohesion_2 = {
-	federation_modifier = {
-		description = cohesion_join_1_effect
-		federation_join_malus_mult = -0.5
+voidborn_loyalty = {
+	members_modifier = {
+		description = voidborn_loyalty_effect
+		planet_crime_mult = -0.15
 	}
 }
 
-voidborn_cohesion_3 = {
-	federation_modifier = {
-		description = cohesion_join_1_effect
-		federation_join_malus_mult = -0.5
+voidborn_stability = {
+	members_modifier = {
+		description = voidborn_stability_effect
+		planet_stability_add = 5
 	}
 }
