@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  casus_belli_cb_void_abduct:0 "Void Abduction"
  casus_belli_cb_void_assimilation:0 "Void Corruption"
  war_goal_wg_void_abduct:0 "Void Abduction"
@@ -159,7 +159,7 @@
  voidborn.1001.a:0 "... but also demanding"
  
  voidborn.1002.name:0 "The Temple"
- voidborn.1002.desc:0 "Our staff managed to find the location of the ancient void temple, the place where the old priests summoned void avatars whom theyd offer the souls of foreign species. It seems we are entering more valuable places now.\n\nIn the ruins we found the first corpse during the whole operation. It was transported quickly to [Root.GetCapital.GetName] to be consecrated. With it were audio logs describing how the Old Ones, after having offered all lesser species they had under control, still couldn't sate the Void and started offering their own people in an act of utter despair."
+ voidborn.1002.desc:0 "Our staff managed to find the location of the ancient void temple, the place where the old priests summoned void avatars whom theyd offer the souls of foreign species. It seems we are entering more valuable places now.\n\nIn the ruins we found the first corpse during the whole operation. It was transported quickly to [Root.Capital.GetName] to be consecrated. With it were audio logs describing how the Old Ones, after having offered all lesser species they had under control, still couldn't sate the Void and started offering their own people in an act of utter despair."
  voidborn.1002.a:0 "The Void hungers still..."
  
  voidborn.1003.name:0 "A holocron"
