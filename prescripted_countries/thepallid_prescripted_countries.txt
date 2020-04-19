@@ -1,6 +1,6 @@
 "Pallid Tribunal"
 ={
-	key="Pallid Tribunal"
+	name="Pallid Tribunal"
 	ship_prefix=""
 	species={
 		class="CORRUPTED"
@@ -8,7 +8,6 @@
 		name="Pallid"
 		plural="Pallid"
 		adjective="Pallid"
-		species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. Thousands of years within a dream of infinite darkness pushed their minds over natural boundaries. The time to seek the rebirth of their long dead overlords lost empire is now."
 		name_list="thepallidnames"
 		trait="trait_venerable"
 		trait="trait_intelligent"
@@ -16,7 +15,7 @@
 		trait="trait_decadent"
 		trait="trait_nonadaptive"
 	}
-	name="Pallid Tribunal"
+	species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. Thousands of years within a dream of infinite darkness pushed their minds over natural boundaries. The time to seek the rebirth of their long dead overlords lost empire is now."
 	adjective="Pallid"
 	authority="auth_oligarchic"
 	government="gov_void_covenant"
@@ -67,7 +66,7 @@
 }
 "Maw of Darkness"
 ={
-	key="Maw of Darkness"
+	name="Maw of Darkness"
 	ship_prefix=""
 	species={
 		class="CORRUPTED"
@@ -75,7 +74,6 @@
 		name="Pallid"
 		plural="Pallid"
 		adjective="Pallid"
-		species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. Thousands of years within a dream of infinite darkness pushed their minds over natural boundaries. Then they found them. They found what they searched for so long. They found their dark gods and were subsumed by them. Subsumed into one being. Into a greater being. Into the Pallid."
 		name_list="thepallidnames"
 		trait="trait_hive_mind"
 		trait="trait_rapid_breeders"
@@ -84,7 +82,7 @@
 		trait="trait_repugnant"
 		trait="trait_fleeting"
 	}
-	name="Maw of Darkness"
+	species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. Thousands of years within a dream of infinite darkness pushed their minds over natural boundaries. Then they found them. They found what they searched for so long. They found their dark gods and were subsumed by them. Subsumed into one being. Into a greater being. Into the Pallid."
 	adjective="Pallid"
 	authority="auth_hive_mind"
 	government="gov_void_swarm"
@@ -133,7 +131,7 @@
 }
 "Dark Ones"
 ={
-	key="Dark Ones"
+	name="Dark Ones"
 	ship_prefix=""
 	species={
 		class="CORRUPTED"
@@ -161,7 +159,6 @@
 		trait="trait_communal"
 	}
 	species_bio="One of the six arks of the Ulysses Initiative became lost in a dark ocean of nothing, drifting for countless years in a timeless void. Humanity was changed. The mark of an alien race of a forgotten civilization spread quickly. It infected the colonists; changed them. They were no longer human but a pale yet somehow... darker version of humanity. More than a hundred years have passed since then. Unfortunately the alien overlords barely remember their past lives and power, thousand of years within a dream of infinite darkness pushed their knowledge to the oblivion... The time to seek the rebirth of a lost empire is now."
-	name="Dark Ones"
 	adjective="Dark"
 	authority="auth_imperial"
 	government="gov_void_monarchy"
