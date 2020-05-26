@@ -279,7 +279,7 @@ fleet_event = {
 	id = voidborn.1010
 	title = "voidborn.1010.name"
 	desc = voidborn.1010.desc
-	picture = GFX_evt_huge_monuments
+	picture = GFX_evt_huge_monument
 	show_sound = event_default
 	location = from
 
@@ -372,7 +372,7 @@ fleet_event = {
 	id = voidborn.1014
 	title = "voidborn.1014.name"
 	desc = voidborn.1014.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_fossil
 	show_sound = event_default
 	location = from
 
@@ -402,7 +402,7 @@ country_event = {
 	id = voidborn.9994
 	title = "voidborn.9994.name"
 	desc = voidborn.9994.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_fossil
 	show_sound = event_default
 
 	is_triggered_only = yes
@@ -418,7 +418,7 @@ country_event = {
 	id = voidborn.9995
 	title = "voidborn.9995.name"
 	desc = voidborn.9995.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_fossil
 	show_sound = event_default
 
 	is_triggered_only = yes
@@ -437,7 +437,7 @@ country_event = {
 	id = voidborn.9996
 	title = "voidborn.9996.name"
 	desc = voidborn.9996.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_fossil
 	show_sound = event_default
 
 	is_triggered_only = yes
@@ -453,7 +453,7 @@ country_event = {
 	id = voidborn.9997
 	title = "voidborn.9997.name"
 	desc = voidborn.9997.desc
-	picture = GFX_evt_baol_2
+	picture = GFX_evt_baol_fossil
 	show_sound = event_default
 
 	is_triggered_only = yes
