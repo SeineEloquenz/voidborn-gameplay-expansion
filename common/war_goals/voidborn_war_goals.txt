@@ -32,6 +32,12 @@ wg_void_assimilation = {
             }
         }
     }
+
+    allowed_peace_offers = {
+        demand_surrender
+        status_quo
+        surrender
+    }
 	
 	ai_weight = {
 		weight = 1000
@@ -84,6 +90,12 @@ wg_void_abduct = {
             add_modifier = { modifier = raided days = 3600 } 
             }
         }
+    }
+
+    allowed_peace_offers = {
+        demand_surrender
+        status_quo
+        surrender
     }
 	
 	ai_weight = {
