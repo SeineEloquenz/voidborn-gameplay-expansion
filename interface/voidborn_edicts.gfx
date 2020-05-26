@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_edict_void_ui"
+		texturefile = "gfx/interface/icons/icon_void_ui_edict.dds"
+	}
+
+}

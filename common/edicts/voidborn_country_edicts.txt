@@ -1,6 +1,8 @@
 voidborn_ui_assimilation_edict = {
+
+    icon = GFX_edict_void_ui
 	length = 0
-	resources = { category = edicts cost = { } }
+    resources = { category = edicts cost = { } }
 
 	potential = {
 		is_ai = no
