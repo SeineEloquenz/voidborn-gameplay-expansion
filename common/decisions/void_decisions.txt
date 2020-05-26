@@ -10,6 +10,7 @@ decision_convert_to_void_world = {
 	resources = {
 		category = decisions
 		cost = {
+			energy = 10000
 			influence = 150
 		}
 	}
